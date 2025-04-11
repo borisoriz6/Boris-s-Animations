@@ -1,0 +1,141 @@
+/* styles.css */
+
+body {
+  background-color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-y: scroll;
+}
+
+.top-bar {
+  background-color: #007BFF;
+  height: 50px;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  justify-content: space-between; /* This makes sure space is distributed between the logo and the button */
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Default logo image */
+.top-bar img {
+  height: 30px;
+  width: auto;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hover effect for the logo */
+.top-bar img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* Hover logo change */
+.logo-link img {
+  content: url('images/cat_logo.png'); /* Default logo */
+  transition: all 0.3s ease; /* Smooth transition for image change */
+}
+
+/* Change the logo image on hover */
+.logo-link:hover img {
+  content: url('images/cat_logo_hover.png'); /* Logo that appears when hovering */
+}
+
+.top-bar-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.top-bar-button {
+  background-color: #f1f1f1;
+  color: #007BFF;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.top-bar-button:hover {
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.video-container {
+  margin-top: 20px;
+}
+
+.video-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.video {
+  display: block;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.video:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.video-title {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
